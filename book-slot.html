@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Gaming Slot - GAMEON DEN Chennai | WhatsApp Booking</title>
+    <meta name="description" content="📱 Book your gaming slot at GAMEON DEN Chennai via WhatsApp. Quick, easy booking for console and PC gaming. Open 10 AM - 10 PM daily.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/book-slot.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="games.html" class="nav-link">Games</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="book-slot.html" class="nav-link active">Book Slot</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Booking Hero Section -->
+        <section class="booking-hero">
+            <div class="container">
+                <h1 class="page-title">📱 Book Your Gaming Slot</h1>
+                <p class="page-subtitle">🚀 Quick and easy WhatsApp booking for the ultimate gaming experience</p>
+                <div class="booking-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">⚡</span>
+                        <span>Instant Booking</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">📱</span>
+                        <span>WhatsApp Support</span>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">🎮</span>
+                        <span>50+ Games</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Booking Section -->
+        <section class="quick-booking">
+            <div class="container">
+                <div class="booking-wrapper">
+                    <div class="booking-form-section">
+                        <h2>📝 Quick Booking Form</h2>
+                        <p>🎯 Fill out the details below and we'll generate a WhatsApp message for you</p>
+                        
+                        <form class="booking-form" id="booking-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="player-name">Your Name *</label>
+                                    <input type="text" id="player-name" name="playerName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone-number">Phone Number *</label>
+                                    <input type="tel" id="phone-number" name="phoneNumber" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="booking-date">Preferred Date *</label>
+                                    <input type="date" id="booking-date" name="bookingDate" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="booking-time">Preferred Time *</label>
+                                    <select id="booking-time" name="bookingTime" required>
+                                        <option value="">Select Time</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="12:00 PM">12:00 PM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                        <option value="5:00 PM">5:00 PM</option>
+                                        <option value="6:00 PM">6:00 PM</option>
+                                        <option value="7:00 PM">7:00 PM</option>
+                                        <option value="8:00 PM">8:00 PM</option>
+                                        <option value="9:00 PM">9:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="num-players">Number of Players *</label>
+                                    <select id="num-players" name="numPlayers" required>
+                                        <option value="">Select Players</option>
+                                        <option value="1">1 Player (₹90/hr)</option>
+                                        <option value="2">2 Players (₹80/player/hr)</option>
+                                        <option value="4">4 Players (₹70/player/hr)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="duration">Duration (Hours) *</label>
+                                    <select id="duration" name="duration" required>
+                                        <option value="">Select Duration</option>
+                                        <option value="1">1 Hour</option>
+                                        <option value="2">2 Hours</option>
+                                        <option value="3">3 Hours</option>
+                                        <option value="4">4 Hours</option>
+                                        <option value="5">5 Hours</option>
+                                        <option value="6">6 Hours</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="game-preference">Game Preference</label>
+                                <select id="game-preference" name="gamePreference">
+                                    <option value="">Any Game</option>
+                                    <option value="Spider-Man 2 (PS5)">Spider-Man 2 </option>
+                                    <option value="FIFA 25 (PS5/Xbox)">FIFA 25 </option>
+                                    <option value="WWE 2K25 (PS5/Xbox)">WWE 2K25 </option>
+                                    <option value="Mortal Kombat (PS5/Xbox/PC)">Mortal 11 Kombat</option>
+                                    <option value="God of War Ragnarök (PS5)">Asphalt Legends Unite</option>
+                                    <option value="Gran Turismo 7 (PS5)">Way Out</option>
+                                    <option value="Halo Infinite (Xbox/PC)"> IT takes two</option>
+                                    <option value="PS5 Console">Cricket 24</option>
+                                    <option value="Xbox Series X"> Red Dead Redemption 2</option>
+                                    <option value="Gaming PC">DIRT 5</option>
+                                    <option value="Gaming PC">Uncharted: Legacy of Thieves</option>
+                                    <option value="Gaming PC">GTA 5</option>
+                                    <option value="Gaming PC">Need for Speed Payback</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="special-requests">Special Requests</label>
+                                <textarea id="special-requests" name="specialRequests" rows="3" placeholder="Any special requirements or requests..."></textarea>
+                            </div>
+                            
+                            <div class="cost-calculator">
+                                <div class="cost-breakdown">
+                                    <div class="cost-item">
+                                        <span>Rate per player/hour:</span>
+                                        <span id="rate-display">-</span>
+                                    </div>
+                                    <div class="cost-item">
+                                        <span>Total players:</span>
+                                        <span id="players-display">-</span>
+                                    </div>
+                                    <div class="cost-item">
+                                        <span>Duration:</span>
+                                        <span id="duration-display">-</span>
+                                    </div>
+                                    <div class="cost-total">
+                                        <span>Estimated Total:</span>
+                                        <span id="total-cost-display">₹0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-large">
+                                📱 Book via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="booking-info-section">
+                        <div class="info-card">
+                            <h3>⏰ Operating Hours</h3>
+                            <div class="hours-info">
+                                <div class="day-hours">
+                                    <span>📅 Monday - Sunday</span>
+                                    <span>10:00 AM - 10:00 PM</span>
+                                </div>
+                                <p class="hours-note">⚠️ Last booking accepted at 9:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>💰 Pricing Summary</h3>
+                            <div class="pricing-summary">
+                                <div class="price-item">
+                                    <span>🎯 Solo Gaming</span>
+                                    <span>₹90/hour</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>👥 Duo Gaming</span>
+                                    <span>₹80/player/hour</span>
+                                </div>
+                                <div class="price-item">
+                                    <span>🏆 Squad Gaming</span>
+                                    <span>₹70/player/hour</span>
+                                </div>
+                            </div>
+                            <a href="pricing.html" class="btn btn-secondary btn-small">💰 View Detailed Pricing</a>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>✨ What's Included</h3>
+                            <ul class="included-list">
+                                <li>🎮 Access to all games</li>
+                                <li>⭐ Premium gaming equipment</li>
+                                <li>🪑 Comfortable seating</li>
+                                <li>🔊 High-quality audio/video</li>
+                                <li>🥤 Basic refreshments</li>
+                                <li>🧽 Clean & sanitized setup</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3>🔥 Popular Games</h3>
+                            <div class="popular-games">
+                                <div class="game-tag">🕷️ Spider-Man 2</div>
+                                <div class="game-tag">⚽ FIFA 25</div>
+                                <div class="game-tag">🤼 WWE 2K25</div>
+                                <div class="game-tag">👊 Mortal 11 Kombat</div>
+                                <div class="game-tag">⚔️ GTA 5</div>
+                                <div class="game-tag">🏎️ DIRT 5</div>
+                            </div>
+                            <a href="games.html" class="btn btn-secondary btn-small">🎮 View All Games</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Direct WhatsApp Section -->
+        <section class="direct-whatsapp">
+            <div class="container">
+                <div class="whatsapp-section">
+                    <h2>📱 Or Book Directly via WhatsApp</h2>
+                    <p>🚀 Prefer to book directly? Send us a WhatsApp message and we'll help you immediately!</p>
+                    
+                    <div class="whatsapp-options">
+                        <div class="whatsapp-option">
+                            <h3>⚡ Quick Booking</h3>
+                            <p>💬 Send a simple message and we'll guide you through the booking process</p>
+                            <a href="https://wa.me/917448902644?text=Hi%20GAMEON%20DEN%2C%20I'd%20like%20to%20book%20a%20gaming%20slot." class="btn btn-whatsapp">
+                                📱 Quick Book
+                            </a>
+                        </div>
+                        
+                        <div class="whatsapp-option">
+                            <h3>📋 Detailed Booking</h3>
+                            <p>📝 Use our pre-filled template with all the necessary details</p>
+                            <a href="https://wa.me/917448902644?text=Hi%20GAMEON%20DEN%2C%20I'd%20like%20to%20book%20a%20gaming%20slot.%20My%20details%20are%3A%0A%0AName%3A%20%0ADate%3A%20%0ATime%3A%20%0ANumber%20of%20Players%3A%20%0AGame%2FConsole%20Preference%3A%20" class="btn btn-whatsapp">
+                                📋 Detailed Book
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <p><strong>📱 WhatsApp:</strong> +91 7448902644</p>
+                        <p><strong>⚡ Response Time:</strong> Usually within 15 minutes during operating hours</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Tips -->
+        <section class="booking-tips">
+            <div class="container">
+                <h2>💡 Booking Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <div class="tip-icon">⏰</div>
+                        <h3>📅 Book in Advance</h3>
+                        <p>🔥 Weekend slots fill up quickly. Book at least a day in advance for guaranteed availability.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">🎮</div>
+                        <h3>🎯 Specify Game Preference</h3>
+                        <p>⭐ Let us know your preferred games or console to ensure the best gaming experience.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">👥</div>
+                        <h3>🏆 Group Bookings</h3>
+                        <p>💰 Bring friends for better rates! 4-player sessions offer the best value at ₹70/player/hour.</p>
+                    </div>
+                    <div class="tip-card">
+                        <div class="tip-icon">⏱️</div>
+                        <h3>🌟 Arrive On Time</h3>
+                        <p>We kindly request you arrive punctually</span> for your booking to ensure everyone gets their full gaming experience. Thank you for your understanding! 😊</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </div>
+                    <p>Chennai's premier gaming destination for console and PC gaming experiences.</p>
+                    <div class="footer-hours">
+                        <strong>Operating Hours:</strong><br>
+                        Daily: 10:00 AM - 10:00 PM
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="book-slot.html">Book Slot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Gaming</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p>📍 103, Old Agraharam St, Vivekananda Nagar, TNHB Mig V Block<br>Chennai, Avadi, Tamil Nadu 600054</p>
+                        <p>📞 <a href="tel:+917448902644">+91 7448902644</a></p>
+                        <p>✉️ <a href="mailto:gameonden.avadi@gmail.com" class="email-link">gameonden.avadi@gmail.com</a></p>
+                        <div class="social-links">
+                        <a href="https://www.instagram.com/gameon_den/" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+                        <a href="https://youtube.com/@gameon_den?si=rcXCbt-LugBHz8oG" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GAMEON DEN. All rights reserved. | Designed with ❤️ for gamers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/book-slot.js"></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+/* Book Slot Page Specific Styles */
+
+/* Booking Hero */
+.booking-hero {
+    padding: calc(80px + var(--space-2xl)) 0 var(--space-2xl);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--dark-secondary) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.booking-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://imagizer.imageshack.com/img923/8476/ilBBTg.gif') center/cover;
+    opacity: 0.08;
+    z-index: 1;
+    animation: bookingPulse 4s ease-in-out infinite alternate;
+}
+
+@keyframes bookingPulse {
+    0% { opacity: 0.05; }
+    100% { opacity: 0.12; }
+}
+
+.booking-highlights {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-lg);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 25px;
+    border: 1px solid var(--dark-tertiary);
+    transition: all 0.3s ease;
+}
+
+.highlight:hover {
+    border-color: var(--secondary-green);
+    background: rgba(0, 255, 136, 0.1);
+}
+
+.highlight-icon {
+    font-size: 1.2rem;
+    color: var(--secondary-green);
+}
+
+/* Quick Booking Section */
+.quick-booking {
+    padding: var(--space-3xl) 0;
+}
+
+.booking-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+}
+
+.booking-form-section h2 {
+    color: var(--white);
+    margin-bottom: var(--space-sm);
+}
+
+.booking-form-section p {
+    color: var(--gray-light);
+    margin-bottom: var(--space-xl);
+}
+
+/* Booking Form */
+.booking-form {
+    background: var(--dark-secondary);
+    padding: var(--space-xl);
+    border-radius: 20px;
+    border: 1px solid var(--dark-tertiary);
+}
+
+.form-group {
+    margin-bottom: var(--space-lg);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.form-row .form-group {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: var(--space-xs);
+    font-weight: 600;
+    color: var(--white);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: var(--space-sm);
+    background: var(--dark-tertiary);
+    border: 1px solid var(--dark-quaternary);
+    border-radius: 8px;
+    color: var(--white);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-red);
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Cost Calculator */
+.cost-calculator {
+    background: var(--dark-tertiary);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    margin: var(--space-lg) 0;
+    border: 1px solid var(--primary-red);
+}
+
+.cost-breakdown {
+    margin-bottom: var(--space-md);
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-xs) 0;
+    color: var(--gray-light);
+}
+
+.cost-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+    border-top: 2px solid var(--primary-red);
+    margin-top: var(--space-sm);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.cost-total span:last-child {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.3rem;
+    color: var(--primary-red);
+}
+
+/* Booking Info Section */
+.booking-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.info-card {
+    background: var(--dark-secondary);
+    border: 1px solid var(--dark-tertiary);
+    border-radius: 16px;
+    padding: var(--space-lg);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    border-color: var(--secondary-green);
+    background: linear-gradient(135deg, var(--dark-secondary) 0%, rgba(0, 255, 136, 0.05) 100%);
+}
+
+.info-card h3 {
+    color: var(--white);
+    margin-bottom: var(--space-md);
+    font-size: 1.2rem;
+}
+
+.hours-info,
+.pricing-summary {
+    margin-bottom: var(--space-md);
+}
+
+.day-hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--dark-tertiary);
+    color: var(--gray-light);
+}
+
+.hours-note {
+    font-size: 0.9rem;
+    color: var(--gray-medium);
+    margin-top: var(--space-sm);
+}
+
+.price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-xs) 0;
+    color: var(--gray-light);
+}
+
+.price-item span:last-child {
+    color: var(--primary-red);
+    font-weight: 600;
+}
+
+.included-list {
+    list-style: none;
+    margin-bottom: var(--space-md);
+}
+
+.included-list li {
+    padding: var(--space-xs) 0;
+    color: var(--gray-light);
+}
+
+.popular-games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-md);
+}
+
+.game-tag {
+    background: var(--dark-tertiary);
+    color: var(--secondary-green);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Direct WhatsApp Section */
+.direct-whatsapp {
+    padding: var(--space-3xl) 0;
+    background: var(--dark-secondary);
+}
+
+.whatsapp-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.whatsapp-section h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.whatsapp-section p {
+    color: var(--gray-light);
+    margin-bottom: var(--space-xl);
+}
+
+.whatsapp-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.whatsapp-option {
+    background: var(--dark-tertiary);
+    padding: var(--space-xl);
+    border-radius: 16px;
+    border: 1px solid var(--dark-quaternary);
+    transition: all 0.3s ease;
+}
+
+.whatsapp-option:hover {
+    border-color: #25d366;
+    background: linear-gradient(135deg, var(--dark-tertiary) 0%, rgba(37, 211, 102, 0.1) 100%);
+    transform: translateY(-3px);
+}
+
+.whatsapp-option h3 {
+    color: var(--white);
+    margin-bottom: var(--space-sm);
+}
+
+.whatsapp-option p {
+    color: var(--gray-light);
+    margin-bottom: var(--space-lg);
+}
+
+.btn-whatsapp {
+    background: #25d366;
+    color: var(--white);
+    border: none;
+    padding: var(--space-sm) var(--space-xl);
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background: #22c35e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+}
+
+.contact-info {
+    background: var(--dark-tertiary);
+    padding: var(--space-lg);
+    border-radius: 12px;
+    border: 1px solid var(--dark-quaternary);
+}
+
+.contact-info p {
+    color: var(--gray-light);
+    margin-bottom: var(--space-xs);
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+/* Booking Tips */
+.booking-tips {
+    padding: var(--space-3xl) 0;
+}
+
+.booking-tips h2 {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+}
+
+.tip-card {
+    background: var(--dark-secondary);
+    padding: var(--space-lg);
+    border-radius: 16px;
+    border: 1px solid var(--dark-tertiary);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--secondary-green);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.tip-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+    color: var(--primary-red);
+}
+
+.tip-card h3 {
+    color: var(--white);
+    margin-bottom: var(--space-sm);
+    font-size: 1.2rem;
+}
+
+.tip-card p {
+    color: var(--gray-light);
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .booking-highlights {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-md);
+    }
+    
+    .highlight {
+        justify-content: center;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .booking-wrapper {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .whatsapp-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .booking-form {
+        padding: var(--space-lg);
+    }
+    
+    .info-card {
+        padding: var(--space-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-form {
+        padding: var(--space-md);
+    }
+    
+    .cost-calculator {
+        padding: var(--space-md);
+    }
+    
+    .whatsapp-option {
+        padding: var(--space-lg);
+    }
+    
+    .tip-card {
+        padding: var(--space-md);
+    }
+    
+    .tip-icon {
+        font-size: 2.5rem;
+    }
+    
+    .popular-games {
+        justify-content: center;
+    }
+}
+
+/* Form Validation States */
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+    border-color: var(--error);
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.form-group.success input,
+.form-group.success select,
+.form-group.success textarea {
+    border-color: var(--success);
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.error-message {
+    color: var(--error);
+    font-size: 0.8rem;
+    margin-top: var(--space-xs);
+}
+
+/* Loading States */
+.booking-form.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.booking-form.loading .btn {
+    position: relative;
+}
+
+.booking-form.loading .btn::after {
+    content: '';
+    position: absolute;
+    right: var(--space-sm);
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animations */
+.booking-form,
+.info-card,
+.whatsapp-option,
+.tip-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-card:nth-child(1) { animation-delay: 0.1s; }
+.info-card:nth-child(2) { animation-delay: 0.2s; }
+.info-card:nth-child(3) { animation-delay: 0.3s; }
+.info-card:nth-child(4) { animation-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+    .booking-form,
+    .info-card,
+    .whatsapp-option,
+    .tip-card {
+        animation: none;
+    }
+    
+    .tip-card:hover,
+    .whatsapp-option:hover {
+        transform: none;
+    }
+}

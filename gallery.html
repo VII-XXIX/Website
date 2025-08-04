@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - GAMEON DEN Chennai | Gaming Lounge Photos & Videos</title>
+    <meta name="description" content="📸 Explore GAMEON DEN Chennai through our gallery. See our gaming setups, environment, and happy gamers enjoying the ultimate gaming experience.">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </a>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="games.html" class="nav-link">Games</a>
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="book-slot.html" class="nav-link">Book Slot</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gallery Hero Section -->
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="page-title">📸 Gallery</h1>
+                <p class="page-subtitle">🎮 Take a virtual tour of Chennai's premier gaming destination</p>
+                <div class="gallery-stats">
+                    <div class="stat">
+                        <span class="stat-number">20+</span>
+                        <span class="stat-label">🎮 Gaming Stations</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5000+</span>
+                        <span class="stat-label">😊 Happy Gamers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">🎯 Gaming Titles</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Filters -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="all">All Photos</button>
+                    <button class="filter-tab" data-filter="gaming-stations">Gaming Stations</button>
+                    <button class="filter-tab" data-filter="lounge">Lounge Area</button>
+                    <button class="filter-tab" data-filter="events">Events</button>
+                    <button class="filter-tab" data-filter="equipment">Equipment</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Gaming Stations -->
+                    <div class="gallery-item" data-category="gaming-stations">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=600" alt="PlayStation 5 Gaming Station" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🎮 PlayStation 5 Station</h3>
+                                    <p>🔥 Latest PS5 with 4K gaming</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="gaming-stations">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming PC Setup" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>💻 High-End Gaming PC</h3>
+                                    <p>⚡ RTX 4080 powered gaming</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="gaming-stations">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Xbox Gaming Area" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🎮 Xbox Series X Zone</h3>
+                                    <p>🎉 Multiplayer gaming paradise</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lounge Area -->
+                    <div class="gallery-item" data-category="lounge">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Comfortable Gaming Lounge" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🛋️ Gaming Lounge</h3>
+                                    <p>😌 Comfortable seating area</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="lounge">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Relaxation Area" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>😎 Chill Zone</h3>
+                                    <p>☕ Perfect for breaks between gaming</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/3945313/pexels-photo-3945313.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming Tournament" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>⚽ FIFA Tournament</h3>
+                                    <p>🏆 Weekly gaming competitions</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Birthday Celebration" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🎂 Birthday Party</h3>
+                                    <p>🎉 Gaming birthday celebrations</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equipment -->
+                    <div class="gallery-item" data-category="equipment">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming Controllers" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🎮 Premium Controllers</h3>
+                                    <p>📡 Latest wireless controllers</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/194511/pexels-photo-194511.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="equipment">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming Monitors" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🖥️ 4K Gaming Monitors</h3>
+                                    <p>✨ Ultra-high resolution displays</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="gaming-stations">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Gaming Station Overview" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🎮 Complete Gaming Setup</h3>
+                                    <p>✨ Everything you need for gaming</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/1040157/pexels-photo-1040157.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="lounge">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food and Beverage Area" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>🍿 Snack Bar</h3>
+                                    <p>🥤 Refreshments for gamers</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <div class="gallery-image">
+                            <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Group Gaming Session" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>👥 Squad Gaming</h3>
+                                    <p>🤝 Friends gaming together</p>
+                                </div>
+                                <button class="gallery-zoom" data-image="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1200">🔍</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="load-more-section">
+                    <button class="btn btn-secondary" id="load-more-gallery">📸 Load More Photos</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="customer-photos">
+            <div class="container">
+                <h2 class="section-title">😊 Happy Gamers</h2>
+                <p class="section-subtitle">📸 Photos from our amazing gaming community</p>
+                <div class="customer-grid">
+                    <div class="customer-photo">
+                        <img src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Happy Gamer 1" loading="lazy">
+                        <div class="customer-info">
+                            <p>"🎮 Best gaming experience ever!"</p>
+                            <span>- Raj, ⭐ Regular Customer</span>
+                        </div>
+                    </div>
+                    <div class="customer-photo">
+                        <img src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Happy Gamer 2" loading="lazy">
+                        <div class="customer-info">
+                            <p>"👥 Perfect place for gaming with friends"</p>
+                            <span>- Priya, 🏆 Group Leader</span>
+                        </div>
+                    </div>
+                    <div class="customer-photo">
+                        <img src="https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Happy Gamer 3" loading="lazy">
+                        <div class="customer-info">
+                            <p>"✨ Amazing setup and great atmosphere"</p>
+                            <span>- Vikram, 🏆 Tournament Winner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Now CTA -->
+        <section class="gallery-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>🎮 Ready to Experience This?</h2>
+                    <p>📱 Book your gaming slot now and be part of the GAMEON DEN experience</p>
+                    <a href="book-slot.html" class="btn btn-primary btn-large">📱 Book Your Slot Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div class="image-modal" id="image-modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img class="modal-image" id="modal-image" src="" alt="">
+            <div class="modal-navigation">
+                <button class="modal-prev">❮</button>
+                <button class="modal-next">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">GAMEON</span>
+                        <span class="logo-accent">DEN</span>
+                    </div>
+                    <p>Chennai's premier gaming destination for console and PC gaming experiences.</p>
+                    <div class="footer-hours">
+                        <strong>Operating Hours:</strong><br>
+                        Daily: 10:00 AM - 10:00 PM
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="book-slot.html">Book Slot</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Gaming</h3>
+                    <ul class="footer-links">
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p>📍 103, Old Agraharam St, Vivekananda Nagar, TNHB Mig V Block<br>Chennai, Avadi, Tamil Nadu 600054</p>
+                        <p>📞 <a href="tel:+917448902644">+91 7448902644</a></p>
+                        <p>✉️ <a href="mailto:gameonden.avadi@gmail.com" class="email-link">gameonden.avadi@gmail.com</a></p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/gameon_den/" target="_blank" rel="noopener noreferrer">📷 Instagram</a>
+                            <a href="https://youtube.com/@gameon_den?si=rcXCbt-LugBHz8oG" target="_blank" rel="noopener noreferrer">📺 YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GAMEON DEN. All rights reserved. | 🎮 Designed with ❤️ for gamers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/gallery.js"></script>
+</body>
+</html>
