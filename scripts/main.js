@@ -9,6 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
         navToggle.addEventListener('click', function() {
             navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
         });
         
         // Close mobile menu when clicking on a link
@@ -17,6 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                document.body.style.overflow = '';
             });
         });
         
@@ -25,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!navToggle.contains(event.target) && !navMenu.contains(event.target)) {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                document.body.style.overflow = '';
             }
         });
     }
@@ -202,15 +211,43 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('keydown', function(e) {
         // Escape key closes mobile menu
         if (e.key === 'Escape') {
-            if (navMenu && navMenu.classList.contains('active')) {
+            if (navToggle && navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 navToggle.classList.remove('active');
+                body.classList.remove('menu-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.focus(); // Return focus to toggle button
+                
+                setTimeout(() => {
+                    navMenu.style.visibility = 'hidden';
+                }, 300);
             }
         }
         
         // Enter key on buttons
         if (e.key === 'Enter' && e.target.classList.contains('btn')) {
             e.target.click();
+        }
+        
+        // Tab navigation within mobile menu
+        if (e.key === 'Tab' && navMenu && navMenu.classList.contains('active')) {
+            const focusableElements = navMenu.querySelectorAll('a[href]');
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+            
+            if (e.shiftKey) {
+                // Shift + Tab
+                if (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                }
+            } else {
+                // Tab
+                if (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
         }
     });
     

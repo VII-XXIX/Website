@@ -51,6 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Game cards hover effects
     const gameCards = document.querySelectorAll('.game-card');
     gameCards.forEach(card => {
+        // Make game cards clickable to navigate to games page
+        card.addEventListener('click', function() {
+            window.location.href = 'games.html';
+        });
+        
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-8px) scale(1.02)';
         });

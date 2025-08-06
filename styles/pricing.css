@@ -511,6 +511,7 @@
     
     .pricing-card.popular {
         transform: none;
+        margin: var(--space-md) 0;
     }
     
     .pricing-card.popular:hover {
@@ -524,10 +525,16 @@
     
     .faq-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .pricing-cta .cta-content h2 {
         font-size: 2.2rem;
+    }
+    
+    .pricing-card {
+        padding: var(--space-lg);
+        margin-bottom: var(--space-md);
     }
 }
 

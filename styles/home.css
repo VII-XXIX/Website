@@ -146,6 +146,7 @@
     transition: all 0.3s ease;
     border: 1px solid transparent;
     position: relative;
+    cursor: pointer;
 }
 
 .game-card:hover {
@@ -420,10 +421,12 @@
     
     .games-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .pricing-cards {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .pricing-card.featured {
@@ -436,15 +439,26 @@
     
     .testimonials-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: var(--space-md);
     }
     
     .cta-content h2 {
         font-size: 2.2rem;
+    }
+    
+    .hero-content {
+        padding: var(--space-xl) var(--space-md);
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-lg);
     }
 }
 

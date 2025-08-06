@@ -401,14 +401,17 @@
     
     .mv-card {
         padding: var(--space-lg);
+        margin-bottom: var(--space-md);
     }
     
     .offerings-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--space-lg);
     }
     
     .values-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .team-grid {
@@ -426,11 +429,14 @@
     
     .location-actions {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--space-md);
     }
     
     .cta-buttons {
         flex-direction: column;
         align-items: center;
+        gap: var(--space-md);
     }
     
     .community-cta .cta-content h2 {

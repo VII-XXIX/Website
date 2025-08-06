@@ -418,10 +418,12 @@ textarea {
     
     .whatsapp-options {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .tips-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .booking-form {
@@ -430,6 +432,17 @@ textarea {
     
     .info-card {
         padding: var(--space-md);
+        margin-bottom: var(--space-md);
+    }
+    
+    .cost-calculator {
+        margin: var(--space-md) 0;
+        padding: var(--space-md);
+    }
+    
+    .whatsapp-option {
+        padding: var(--space-lg);
+        margin-bottom: var(--space-md);
     }
 }
 

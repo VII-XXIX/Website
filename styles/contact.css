@@ -436,6 +436,7 @@ textarea {
     
     .contact-methods {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .contact-wrapper {
@@ -450,18 +451,32 @@ textarea {
     
     .form-actions {
         flex-direction: column;
+        gap: var(--space-md);
     }
     
     .location-actions {
         justify-content: center;
+        flex-wrap: wrap;
+        gap: var(--space-md);
     }
     
     .faq-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .actions-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .contact-method {
+        padding: var(--space-lg);
+        margin-bottom: var(--space-md);
+    }
+    
+    .contact-form {
+        padding: var(--space-lg);
     }
 }
 

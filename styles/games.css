@@ -294,6 +294,8 @@
         justify-content: flex-start;
         overflow-x: auto;
         padding-bottom: var(--space-sm);
+        padding: 0 var(--space-sm) var(--space-sm);
+        margin: 0 -var(--space-sm);
     }
     
     .filter-tabs::-webkit-scrollbar {
@@ -312,16 +314,20 @@
     
     .games-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-lg);
     }
     
     .game-meta {
         justify-content: center;
+        flex-wrap: wrap;
     }
     
     .platform-filters {
         justify-content: flex-start;
         overflow-x: auto;
         padding-bottom: var(--space-sm);
+        padding: 0 var(--space-sm) var(--space-sm);
+        margin: 0 -var(--space-sm);
     }
 }
 
